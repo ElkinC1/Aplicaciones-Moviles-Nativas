@@ -71,7 +71,6 @@ fun CartaDePresentacion() {
                 Icon(
                     painter = painterResource(id = R.drawable.icon_phone),
                     contentDescription = null,
-                    tint = Color(0xFF006D3B)
                 )
                 Text(text = "  +593 99 019 5933", fontSize = 16.sp)
             }
@@ -79,7 +78,7 @@ fun CartaDePresentacion() {
                 Icon(
                     painter = painterResource(id = R.drawable.icon_share),
                     contentDescription = null,
-                    tint = Color(0xFF006D3B)
+
                 )
                 Text(text = "  @ElkinC1", fontSize = 16.sp)
             }
@@ -87,7 +86,6 @@ fun CartaDePresentacion() {
                 Icon(
                     painter = painterResource(id = R.drawable.icon_email),
                     contentDescription = null,
-                    tint = Color(0xFF006D3B)
                 )
                 Text(text = "  e1317159042@live.uleam.edu.ec", fontSize = 16.sp)
             }
@@ -100,7 +98,7 @@ fun CartaDePresentacion() {
 fun PreviewCartaDePresentacion() {
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = Color.Black
+        color = Color(0xFFE4F7ED)
     ) {
         CartaDePresentacion()
     }
