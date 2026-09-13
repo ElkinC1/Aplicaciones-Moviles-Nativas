@@ -21,6 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.Icon
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,14 +68,28 @@ fun CartaDePresentacion() {
 
         Column {
             Row(modifier = Modifier.padding(8.dp)) {
-                Text(text = "+593 99 019 5933", fontSize = 16.sp)
+                Icon(
+                    painter = painterResource(id = R.drawable.icon_phone),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B)
+                )
+                Text(text = "  +593 99 019 5933", fontSize = 16.sp)
             }
             Row(modifier = Modifier.padding(8.dp)) {
-
-                Text(text = "@ElkinC1", fontSize = 16.sp)
+                Icon(
+                    painter = painterResource(id = R.drawable.icon_share),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B)
+                )
+                Text(text = "  @ElkinC1", fontSize = 16.sp)
             }
             Row(modifier = Modifier.padding(8.dp)) {
-                Text(text = "e1317159042@live.uleam.edu.ec", fontSize = 16.sp)
+                Icon(
+                    painter = painterResource(id = R.drawable.icon_email),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B)
+                )
+                Text(text = "  e1317159042@live.uleam.edu.ec", fontSize = 16.sp)
             }
         }
     }
